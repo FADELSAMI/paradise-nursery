@@ -1,0 +1,60 @@
+/* ProductDetail.css */
+.product-detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    max-width: 800px; /* Limite la largeur de la section de détail */
+    margin: 0 auto; /* Centrer la section */
+}
+
+.product-detail img {
+    width: 100%; /* L'image prend toute la largeur du conteneur */
+    max-height: 400px; /* Limite la hauteur à 400px */
+    object-fit: contain; /* Garde le ratio d'aspect, sans étirer l'image */
+    margin-bottom: 20px; /* Espace sous l'image */
+}
+
+.quantity-controls {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.quantity-controls button {
+    padding: 5px 10px;
+    font-size: 18px;
+}
+
+.add-to-cart-btn,
+.checkout-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-top: 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.add-to-cart-btn:hover,
+.checkout-btn:hover {
+    background-color: #218838;
+}
+
+/* Ajout d'un peu plus d'espace pour le texte et les boutons */
+.product-detail h2 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.product-detail p {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+  
+
+
+  

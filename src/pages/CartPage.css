@@ -1,0 +1,140 @@
+/* Style général pour la page panier */
+.cart-page {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Conteneur des articles dans le panier */
+.cart-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px;
+}
+
+/* Carte individuelle pour chaque article */
+.cart-item-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Image de l'article */
+.cart-item-card img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    border-radius: 5px;
+}
+
+/* Détails de l'article */
+.cart-item-details {
+    flex-grow: 1;
+    text-align: left;
+    margin-left: 15px;
+}
+
+.cart-item-details h3 {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.cart-item-details p {
+    font-size: 1rem;
+    color: #555;
+    margin: 5px 0;
+}
+
+/* Boutons de gestion des quantités */
+.cart-item-actions {
+    display: flex;
+    align-items: center;
+}
+
+.quantity-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.quantity-controls button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.quantity-controls button:hover {
+    background-color: #0056b3;
+}
+
+.quantity-controls span {
+    font-size: 1.2rem;
+    min-width: 20px;
+    text-align: center;
+}
+
+/* Bouton de suppression */
+.remove-btn {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.remove-btn:hover {
+    background-color: #c82333;
+}
+
+/* Bouton de paiement */
+.pay-button {
+    background-color: #28a745;
+    color: white;
+    font-size: 18px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.pay-button:hover {
+    background-color: #218838;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .cart-item-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .cart-item-details {
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .cart-item-actions {
+        flex-direction: column;
+    }
+
+    .remove-btn {
+        margin-top: 10px;
+    }
+}
+
+  

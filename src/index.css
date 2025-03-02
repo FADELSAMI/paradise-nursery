@@ -1,0 +1,142 @@
+/* Réinitialiser les marges et paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Assurer que la page prend toute la hauteur de la fenêtre */
+html, body {
+  height: 100%;
+}
+
+/* Appliquer un fond avec l'image qui couvre toute la page */
+.bg-cover {
+  background-image: url("/background.jpg"); /* Assure-toi que l'image est dans le bon dossier */
+  background-size: cover; /* Couvre toute la page */
+  background-position: center center; /* Centrer l'image */
+  background-repeat: no-repeat; /* Pas de répétition de l'image */
+  height: 100vh; /* Utiliser toute la hauteur de la fenêtre */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Assurer que tout reste bien contenu */
+}
+
+/* Pour changer la couleur du texte principal */
+h1, p {
+  color: brown; /* Change la couleur du texte en marron */
+  text-align: center;
+  z-index: 1; /* Assurer que le texte apparait au-dessus du fond */
+}
+
+/* Optionnel : ajouter du style pour le bouton */
+button {
+  cursor: pointer;
+  padding: 10px 20px;
+  background-color: #ff7f50;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  z-index: 1; /* Assurer que le bouton apparait au-dessus du fond */
+}
+
+.my-text-class {
+  font-size: 3rem; /* Plus grand */
+  font-weight: 800; /* Très gras */
+  color: brown; /* Marron */
+}
+
+/* Stylisation de la grille de produits */
+.product-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Créer 3 colonnes égales */
+  gap: 2rem; /* Espacement entre les colonnes */
+  padding: 2rem;
+  justify-items: center;
+}
+
+.product-card {
+  width: 100%; /* Prendre toute la largeur de la colonne */
+  text-align: center;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #fff;
+  max-width: 250px; /* Limiter la largeur des cartes */
+}
+
+.product-card img {
+  width: 100%;
+  max-width: 250px; /* Limiter la taille de l'image */
+  height: auto;
+  border-radius: 10px; /* Arrondir les coins des images */
+  transition: transform 0.3s ease-in-out;
+}
+
+.product-card img:hover {
+  transform: scale(1.1); /* Agrandir l'image au survol */
+}
+
+.product-card h2 {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+.product-card p {
+  font-size: 1.2rem;
+  color: #777;
+}
+
+.product-card button {
+  background-color: #ff7f50;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.product-card button:hover {
+  background-color: #ff5722;
+}
+
+.product-detail {
+  text-align: center;
+  padding: 20px;
+}
+
+.product-detail-image {
+  width: 50%; /* Ajuste la taille de l'image */
+  max-width: 400px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.product-detail h2 {
+  font-size: 2rem;
+  color: #333;
+}
+
+.product-detail p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.add-to-cart-btn {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #218838;
+}
+
+
+
